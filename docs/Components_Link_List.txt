@@ -1,0 +1,79 @@
+Fuse
+https://www.digikey.com/en/products/detail/littelfuse-inc/0MAX060-X/2518876
+
+Fuse Holder
+https://www.digikey.com/en/products/detail/littelfuse-commercial-vehicle-products/MAHC0001ZXJ/2356468
+
+LED Indicator
+https://www.digikey.com/en/products/detail/visual-communications-company-vcc/PML50GFVW/6827028
+
+DC Fan
+https://www.digikey.com/en/products/detail/delta-electronics/AFC0912D-AF00/1850525
+
+Fan Filter 
+https://www.digikey.com/en/products/detail/gardtec-incorporated/AFM-92M/9654059
+
+Temp Sensor
+https://wiki.dfrobot.com/DHT22_Temperature_and_humidity_module_SKU_SEN0137?utm_source=chatgpt.com
+
+Volt Meter
+https://www.digikey.com/en/products/detail/adafruit-industries-llc/575/5353605
+
+Rocker Switch
+https://www.nilight.com/products/50a-on-off-disconnetc-battery-switch?srsltid=AfmBOorWinyJSBJt_xtAQ1ehC6hdIgW6yF3wtkDiYRARRop87QeFcYKm&utm
+
+Voltage Regulator
+(5V Jetson)
+https://www.gobilda.com/6a-bec-voltage-regulator-6-24v-input-5v-6v-8-4v-12v-output-screw-terminals/
+(DC FAN)
+https://www.pololu.com/product/5577/specs
+LCD
+https://www.pololu.com/product/2850
+AGX Regulator
+https://envistiamall.com/products/150w-10-32v-in-12-35v-out-6a-step-up-boost-converter-power-supply-module
+
+Controllers
+Arduino Mega
+https://www.digikey.com/en/products/detail/arduino/A000067/2639006
+AGX 
+https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html
+Jetson Orin Nano Super
+https://www.seeedstudio.com/NVIDIAr-Jetson-Orintm-Nano-Developer-Kit-p-5617.html?srsltid=AfmBOopwhRAcnZG0HFBXEo1iN6TszU0Vpb1S_SJA3_qwRCemhEo46PW1 
+
+Sleeves
+Heat Shrink Tubing (560pc Assortment Pack)
+https://www.gobilda.com/heat-shrink-tubing-560pc-assortment-pack/
+Braided Cable Sleeve 
+https://www.gobilda.com/braided-cable-sleeve-8mm-diameter-3-meter-length/ 
+
+(DC Motor and Driver)
+Dc Motor
+https://www.gobilda.com/5303-series-saturn-planetary-gear-motor-50-9-1-ratio-24mm-length-8mm-rex-shaft-360-rpm-3-3-5v-encoder/
+Motor Driver
+https://www.gobilda.com/2x40a-motor-controller/
+Motors Connectors
+https://www.gobilda.com/encoder-cable-extension-4-pos-jst-xh-300mm-length/\
+https://www.gobilda.com/encoder-breakout-cable-4-pos-jst-xh-mh-fc-to-4-x-1-pos-tjc8-mh-fc-300mm-length/
+https://www.gobilda.com/encoder-breakout-cable-4-pos-jst-xh-mh-fc-to-4-x-1-pos-tjc8-fh-mc-300mm-length/
+https://www.gobilda.com/3-5mm-bullet-connector-pack-mh-fc-x-5-fh-mc-x-5/
+
+
+Batteries
+https://hobbyking.com/en_us/turnigy-high-capacity-12000mah-4s-12c-multi-rotor-lipo-pack-xt90.html
+Batteries adapter and cable
+https://hobbyking.com/xt90-harness-for-2-packs-in-parallel-2pcs-bag.html
+https://www.gobilda.com/xt90-y-harness-single-fh-mc-xt90-to-dual-mh-fc-xt90-300mm-length/
+https://www.gobilda.com/xt90-extension-fh-mc-to-mh-fc-300mm-length/
+Strap Cable
+https://rcbattery.com/rcbattery-com-battery-strap-400mm.html?srsltid=AfmBOooJ5iAOYYTqFyjBH6bma8_-56dz_oJB5sFSQx4oeXXTqCTaPx0L
+Parallel board
+
+Charger
+
+
+LCD and wires
+
+Wire
+https://www.digikey.com/en/products/detail/belden-inc/9910-002100/7389098
+https://www.digikey.com/en/products/detail/belden-inc/9910-010100/7389099
+
