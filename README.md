@@ -48,7 +48,9 @@ Everything runs from a single 14.8 V battery pack (4 × 4S 12 Ah LiPo in paralle
 ## Hardware Design
 ### Mechanical
 The chassis is built from aluminium extrusion with a central electronics bay, front and rear axle assemblies and a payload tray above. Each wheel hangs on its own arm with a damper, giving independent suspension for uneven ground. The CAD renders show the tall sensor mast at the front carrying the 3D LiDAR with the GPS antenna above it, a forward camera, and the touch display mounted at the rear. The build photos show the chassis plates, payload tray and sensor/electronics brackets as black parts alongside the wheels, shocks and mounting hardware.
+
 ![3D_Design](images/3D_Design.png)
+
 ![3d_Parts](images/3D_Parts.png)
 ### Electrical architecture
 The 4WD Outdoor vehicle divides the system into four sections:
@@ -62,38 +64,34 @@ The 4WD Outdoor vehicle divides the system into four sections:
 
 ### Power distribution & protection board (Altium)
 The custom board sits between the battery and everything else as the single point of power protection and distribution.
-- Input: XT90PW connector (J1) with 470 µF bulk capacitors on the input.
-- Fusing: PCB cartridge fuse block (F1, Littelfuse 0PTF0078P).
-- Reverse-polarity protection: P-channel MOSFET Q1 (IRF4905PBF, 55 V / 74 A).
-- Output switching: five Infineon BTS50005-1LUA smart high-side switches (U1–U5, 3.1–28 V, 65 A class), with green status LEDs.
-- Outputs: two XT90 female outputs (J3, J4) and six binding-post terminals (J5–J10), plus a 2-pin header (J2).
-- Regulation: LM7805 linear regulator (IC1) for the 5 V logic/LCD rail.
-- Dimension: (130 x 95)mm [L x W]
-![3D_PCB](images/3D_PCB.png)
-![PCB](images/PCB.png)
+- **Input:** XT90PW connector (J1) with 470 µF bulk capacitors on the input.
+- **Fusing:** PCB cartridge fuse block (F1, Littelfuse 0PTF0078P).
+- **Reverse-polarity protection:** P-channel MOSFET Q1 (IRF4905PBF, 55 V / 74 A).
+- **Output switching:** five Infineon BTS50005-1LUA smart high-side switches (U1–U5, 3.1–28 V, 65 A class), with green status LEDs.
+- **Outputs:** two XT90 female outputs (J3, J4) and six binding-post terminals (J5–J10), plus a 2-pin header (J2).
+- **Regulation:** LM7805 linear regulator (IC1) for the 5 V logic/LCD rail.
+- **Dimension:** (130 x 95)mm [L x W]
+
 ![PCB_2D](images/PCB_2D.png)
+
+![PCB](images/PCB.png)
+
+![3D_PCB](images/3D_PCB.png)
+
 The protection circuit was simulated in NI Multisim `(Protection Block/Simulation/Protection Circuit.ms14)`.
 ## Repository Structure
-
 ```
 hardware/altium/   Altium project — block diagram & power-distribution schematics, PCB layout, schematic/PCB libraries, 3D PCB model (.step)
-docs/              Schematic PDF export, BOM, Design Rule Check report, block diagram source, sourced-component link list
+docs/              Schematic PDF export, BOM
 images/            Schematic render for this README
 ```
-
 ## Hardware Design
-
 Designed in Altium Designer (`hardware/altium/`):
 - `Block.SchDoc` — system-level block diagram
 - `Power Distribution Block.SchDoc` — detailed protection/regulation circuit
-- `final_PCB.PcbDoc` / `final_PCB_SmartPCB.PcbDoc` — PCB layout (two output variants), with `final_PCB.step` as the 3D model
+- `final_PCB.PcbDoc` / `final_PCB_SmartPCB.PcbDoc` — PCB layout with `final_PCB.step` as the 3D model
 - `Schlib1.SchLib` / `PcbLib1.PcbLib` — custom schematic and footprint libraries used in the design
-
-Full schematic export and the bill of materials are in `docs/` for quick viewing without Altium installed; `docs/Design_Rule_Check.html` documents the PCB's DRC pass.
+Full schematic export and the bill of materials are in `docs/` 
 
 ## Author
-Project team: Muhammad Huzaifa Rahim Malik, Muhammad Mohsin Razaqi, Muhammad Awais Khan, Muhammad Ahmad Kamran — AI Technology Centre (AITEC), National Centre for Physics, Islamabad.
-=======
-# Outdoor-Autonomous-Vehicle
-# Outdoor-Autonomous-Vehicle
->>>>>>> abce1f80b8f5548d70f4a9fad2814012a9585931
+Project team: Dr.Muhammad Ahmad Kamran (Team Lead) ,Muhammad Huzaifa Rahim Malik (Electronics Design), Muhammad Mohsin Razaqi (Mechanical Design), Muhammad Awais Khan (Algorithm Design)
