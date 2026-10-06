@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Outdoor Autonomous Vehicle — Electrical Architecture & Power Distribution
 A high-performance outdoor autonomous vehicle engineered for navigation, 3D mapping, and advanced perception. It integrates NVIDIA AGX Orin, 3D LiDAR, multi-camera systems, GPS, and high-torque encoder motors with a custom power distribution system.
 
@@ -93,3 +94,7 @@ Full schematic export and the bill of materials are in `docs/` for quick viewing
 
 ## Author
 Project team: Muhammad Huzaifa Rahim Malik, Muhammad Mohsin Razaqi, Muhammad Awais Khan, Muhammad Ahmad Kamran — AI Technology Centre (AITEC), National Centre for Physics, Islamabad.
+=======
+# Outdoor-Autonomous-Vehicle
+# Outdoor-Autonomous-Vehicle
+>>>>>>> abce1f80b8f5548d70f4a9fad2814012a9585931
