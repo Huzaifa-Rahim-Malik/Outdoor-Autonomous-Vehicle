@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Outdoor Autonomous Vehicle — Electrical Architecture & Power Distribution
 A high-performance outdoor autonomous vehicle engineered for navigation, 3D mapping, and advanced perception. It integrates NVIDIA AGX Orin, 3D LiDAR, multi-camera systems, GPS, and high-torque encoder motors with a custom power distribution system.
 
