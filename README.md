@@ -1,5 +1,9 @@
 # Outdoor Autonomous Vehicle — Electrical Architecture & Power Distribution
+<<<<<<< HEAD
 A high-performance outdoor autonomous vehicle engineered for navigation, 3D mapping, and advanced perception. It integrates NVIDIA AGX Orin, 3D/2D LiDAR, multi-camera systems, GPS, and high-torque encoder motors with a custom power distribution system.
+=======
+A high-performance outdoor autonomous vehicle engineered for navigation, 3D mapping, and advanced perception. It integrates NVIDIA AGX Orin, 3D LiDAR, multi-camera systems, GPS, and high-torque encoder motors with a custom power distribution system.
+>>>>>>> 5a85e198b06833bccc39082a0b41cc006285fa4e
 
 ![3D_image](images/Outdoor_Vehicle.png)
 
@@ -10,7 +14,11 @@ A high-performance outdoor autonomous vehicle engineered for navigation, 3D mapp
 - Supports custom robotic algorithm development, including navigation, SLAM, and perception
 
 ## System Overview
+<<<<<<< HEAD
 The vehicle is a four-wheel-drive, skid-steer (differential drive) outdoor platform built on an aluminium-extrusion chassis with independent suspension at every wheel and 10" solid, flat-free rubber tyres. Perception and compute are split across two NVIDIA Jetson modules: a Jetson Orin Nano Super that handles the sensor stack (3D/2D LiDAR, GPS, camera, DHT22 temperature/humidity sensor) and a Jetson AGX Orin 64GB for heavy navigation, SLAM and perception workloads, with a 10.4" touch display for on-vehicle monitoring. An Arduino Mega 2560 sits between the Jetson and the actuators: it generates the control signals for the two 2×40 A motor drivers (four brushed DC gear-motors with encoders) and PWM-controls the two enclosure cooling fans while reading their tach feedback.
+=======
+The vehicle is a four-wheel-drive, skid-steer (differential drive) outdoor platform built on an aluminium-extrusion chassis with independent suspension at every wheel and 10" solid, flat-free rubber tyres. Perception and compute are split across two NVIDIA Jetson modules: a Jetson Orin Nano Super that handles the sensor stack (3D/2D LiDAR, GPS, camera, DHT22 temperature/humidity sensor) and a Jetson AGX Orin 64GB for heavy navigation, SLAM and perception workloads, with a 10.4" touch display for on-vehicle monitoring. An Arduino Mega 2560 sits between the Jetson and the actuators: it generates the control signals for the two 2×40 A motor drivers (four brushed DC gear-motors with encoders) and PWM-controls the two enclosure cooling fans while reading their tach/PG feedback.
+>>>>>>> 5a85e198b06833bccc39082a0b41cc006285fa4e
 
 Everything runs from a single 14.8 V battery pack (4 × 4S 12 Ah LiPo in parallel, 48 Ah). The pack feeds a custom power distribution board through an XT90 connector. The board provides fusing, reverse-polarity protection and smart high-side switching, and splits power into separate rails for the compute/sensor stack and the two motor-driver sections. Downstream DC-DC converters then produce 5 V, 12 V and 19 V rails. A battery disconnect switch, panel voltmeter and indicator LED complete the power front-end.
 
@@ -62,7 +70,10 @@ The 4WD Outdoor vehicle divides the system into four sections:
 3. Motor driver 1 (VS_PS2). Drives the two forward motors (left and right).
 4. Motor driver 2 (VS_PS3). Drives the two rear motors (left and right).
 
+<<<<<<< HEAD
 ![3D_Electronics](images/3D_Electronics_parts.jpg)
+=======
+>>>>>>> 5a85e198b06833bccc39082a0b41cc006285fa4e
 ### Power distribution & protection board (Altium)
 The custom board sits between the battery and everything else as the single point of power protection and distribution.
 - **Input:** XT90PW connector (J1) with 470 µF bulk capacitors on the input.
