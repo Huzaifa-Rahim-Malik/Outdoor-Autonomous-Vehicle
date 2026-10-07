@@ -64,7 +64,7 @@ The 4WD Outdoor vehicle divides the system into four sections:
 3. Motor driver 1 (VS_PS2). Drives the two forward motors (left and right).
 4. Motor driver 2 (VS_PS3). Drives the two rear motors (left and right).
 
-![3D_Electronics_parts](images/3D_Electronics_parts.jpg)
+![3D_Electronics_names](images/3D_Electronics_name.jpg)
 
 ### Custom Power Distribution Board
 The custom board sits between the battery and everything else as the single point of power protection and distribution.
