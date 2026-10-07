@@ -82,7 +82,6 @@ The custom board sits between the battery and everything else as the single poin
 
 ![3D_PCB](images/3D_PCB.png)
 
-The protection circuit was simulated in NI Multisim `(Protection Block/Simulation/Protection Circuit.ms14)`.
 ## Repository Structure
 ```
 hardware/altium/   Altium project — block diagram & power-distribution schematics, PCB layout, schematic/PCB libraries, 3D PCB model (.step)
@@ -90,12 +89,12 @@ docs/              Schematic PDF export, BOM
 images/            Schematic render for this README
 ```
 ## Hardware Design
-Designed in Altium Designer (`hardware/altium/`):
-- `Block.SchDoc` — system-level block diagram
-- `Power Distribution Block.SchDoc` — detailed protection/regulation circuit
-- `final_PCB.PcbDoc` / `final_PCB_SmartPCB.PcbDoc` — PCB layout with `final_PCB.step` as the 3D model
-- `Schlib1.SchLib` / `PcbLib1.PcbLib` — custom schematic and footprint libraries used in the design
-Full schematic export and the bill of materials are in `docs/` 
+The Custom power distribution board is designed in Altium Designer [`hardware/altium/`](hardware/altium/):
+- [`Block.SchDoc`]() — system-level block diagram
+- [`Power Distribution Block.SchDoc`]() — detailed protection/regulation circuit
+- [`final_PCB.PcbDoc`]() — PCB layout with `final_PCB.step` as the 3D model
+- [`Schlib1.SchLib` / `PcbLib1.PcbLib`]() — custom schematic and footprint libraries used in the design
+- Full schematic export and the bill of materials are in [`docs/`]() 
 
 ## Author
 This project is done by the following team members and currently is in development phase
