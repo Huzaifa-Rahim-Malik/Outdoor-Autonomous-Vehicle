@@ -66,6 +66,7 @@ The 4WD Outdoor vehicle divides the system into four sections:
 
 ![3D_Electronics](images/3D_Electronics_parts.jpg)
 
+### Custom Power Distribution Board
 The custom board sits between the battery and everything else as the single point of power protection and distribution.
 - **Input:** XT90PW connector (J1) with 470 µF bulk capacitors on the input.
 - **Fusing:** PCB cartridge fuse block (F1, Littelfuse 0PTF0078P).
@@ -97,4 +98,8 @@ Designed in Altium Designer (`hardware/altium/`):
 Full schematic export and the bill of materials are in `docs/` 
 
 ## Author
-Project team: Dr.Muhammad Ahmad Kamran (Team Lead) ,Muhammad Huzaifa Rahim Malik (Electronics Design), Muhammad Mohsin Razaqi (Mechanical Design), Muhammad Awais Khan (Algorithm Design)
+This project is done by the following team members and currently is in development phase
+- Dr.Muhammad Ahmad Kamran (Team Lead), AITeC Islamabad
+- Muhammad Huzaifa Rahim Malik (Electronics Design), AITeC Islamabad
+- Muhammad Mohsin Razaqi (Mechanical Design), AITeC Islamabad 
+- Muhammad Awais Khan (Algorithm Design), AITeC Islamabad
