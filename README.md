@@ -5,8 +5,8 @@ A high-performance outdoor autonomous vehicle engineered for navigation, 3D mapp
 ![3D_image](images/Outdoor_Vehicle.png)
 
 **Features:**
-- ROS 2-compatible 4WD mobile platform for outdoor applications
-- Robust aluminum chassis with 10-inch solid rubber wheels
+- ROS 2-compatible 4WD mobile platform for outdoor applications (this repository covers the hardware and electrical design; robot software is not included)
+- Robust aluminium chassis with 10-inch solid rubber wheels
 - Designed for operation on uneven outdoor terrain
 - Supports custom robotic algorithm development, including navigation, SLAM, and perception
 
@@ -30,13 +30,13 @@ Everything runs from a single 14.8 V battery pack (4 × 4S 12 Ah LiPo in paralle
 | Main computer | NVIDIA Jetson AGX Orin 64GB Developer Kit |
 | Sensor computer | NVIDIA Jetson Orin Nano Super Developer Kit |
 | Microcontroller | Arduino Mega 2560 |
-| Sensors | 3D LiDAR / 2D LIDAR , RGB-D camera, GPS, DHT22 temperature/humidity |
+| Sensors | 3D LiDAR / 2D LiDAR, RGB-D camera, GPS, DHT22 temperature/humidity |
 | Motors | 4 × goBILDA 5303 Saturn planetary gear motor  |
 | Motor drivers | 2 × goBILDA 2×40 A (9–30 V, 50 A burst) |
 | Battery | 14.8 V, 48 Ah (4 × Zeee 4S 12000 mAh, XT90) |
 | Display | Waveshare 10.4" QLED capacitive touch, HDMI |
 | Cooling | 2 × Delta AFC0912D 92 mm fans with filters |
-| Software | ROS 2 compatible |
+| Software | ROS 2 compatible (not included in this repo) |
 ### Power budget
 | Rail | Estimated current | Load |
 |---|---|---|
@@ -74,7 +74,7 @@ The custom board sits between the battery and everything else as the single poin
 - **Output switching:** five Infineon BTS50005-1LUA smart high-side switches (U1–U5, 3.1–28 V, 65 A class), with green status LEDs.
 - **Outputs:** two XT90 female outputs (J3, J4) and six binding-post terminals (J5–J10), plus a 2-pin header (J2).
 - **Regulation:** LM7805 linear regulator (IC1) for the 5 V logic/LCD rail.
-- **Dimension:** (130 x 95)mm [L x W]
+- **Dimensions:** 130 × 95 mm (L × W)
 
 ![PCB_2D](images/PCB_2D.png)
 
@@ -82,22 +82,34 @@ The custom board sits between the battery and everything else as the single poin
 
 ![3D_PCB](images/3D_PCB.png)
 
+## Build Photos
+![Outdoor_Vehicle_Photo_1](images/Outdoor_Vehicle_Photo_1.jpeg)
+![Outdoor_Vehicle_Photo_2](images/Outdoor_Vehicle_Photo_2.jpeg)
+![Outdoor_Vehicle_Photo_3](images/Outdoor_Vehicle_Photo_3.jpeg)
+![Outdoor_Vehicle_Photo_4](images/Outdoor_Vehicle_Photo_4.jpeg)
+![Outdoor_Vehicle_Photo_5](images/Outdoor_Vehicle_Photo_5.jpeg)
+
 ## Repository Structure
 ```
-hardware/altium/   Altium project — block diagram & power-distribution schematics, PCB layout, schematic/PCB libraries, 3D PCB model (.step)
-docs/              Schematic PDF export, BOM
-images/            Schematic render for this README
+hardware/altium/   Altium Designer project: block diagram and power-distribution schematics,
+                   PCB layout, custom schematic and footprint libraries, BOM and output job
+docs/              Schematics.pdf (full schematic export), BOM_Electronics.xlsx (bill of materials),
+                   Block_Diagram.vsdx (editable block diagram)
+images/            Block diagram, CAD renders, PCB renders and build photos used in this README
 ```
-## Hardware Design
-The Custom power distribution board is designed in Altium Designer [`hardware/altium/`](hardware/altium/):
+
+## Altium Project Files
+The custom power distribution board is designed in Altium Designer, see [`hardware/altium/`](hardware/altium/):
 - `Block.SchDoc` — system-level block diagram
-- `Power Distribution Block.SchDoc` — detailed protection/regulation circuit
-- `final_PCB.PcbDoc` — PCB layout with `final_PCB.step` as the 3D model
+- `Power Distribution Block.SchDoc` — detailed protection and regulation circuit
+- `final_PCB.PcbDoc` — PCB layout
 - `Schlib1.SchLib` / `PcbLib1.PcbLib` — custom schematic and footprint libraries used in the design
-- Full schematic export and the bill of materials are in [`docs/`]() 
+- `Outdoor_Vehicle.BomDoc` — BOM document
+
+Exports: [`docs/Schematics.pdf`](docs/Schematics.pdf), [`docs/BOM_Electronics.xlsx`](docs/BOM_Electronics.xlsx), [`docs/Block_Diagram.vsdx`](docs/Block_Diagram.vsdx).
 
 ## Author
-This project is done by the following team members and currently is in development phase
+This project is being developed by the following team members (in development):
 - Dr.Muhammad Ahmad Kamran (Team Lead), AITeC Islamabad
 - Muhammad Huzaifa Rahim Malik (Electronics Design), AITeC Islamabad
 - Muhammad Mohsin Razaqi (Mechanical Design), AITeC Islamabad 
